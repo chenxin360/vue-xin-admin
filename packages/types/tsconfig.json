@@ -1,0 +1,14 @@
+{
+//  "compilerOptions": {
+//    "target": "es2016",
+//    "module": "commonjs",
+//    "esModuleInterop": true,
+//    "forceConsistentCasingInFileNames": true,
+//    "strict": true,
+//    "skipLibCheck": true
+//  }
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "exclude": "@xin/tsconfig/web.json",
+  "include": ["src"],
+  "extends": ["node_modules"]
+}
