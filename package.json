@@ -1,0 +1,70 @@
+{
+  "name": "vue-xin-admin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "this is a vue admin-template",
+  "keywords": ["monorepo","turbo","vue","vue admin","vben admin","vue3"],
+  "author": {
+    "name": "chenxin",
+    "email": "chenxin_web@163.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "turbo-run dev",
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "pnpm -r run stub --if-present"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "@vitejs/plugin-vue": "catalog:",
+    "@vitejs/plugin-vue-jsx": "catalog:",
+    "@vue/test-utils": "catalog:",
+    "autoprefixer": "catalog:",
+    "cross-env": "catalog:",
+    "cspell": "catalog:",
+    "happy-dom": "catalog:",
+    "turbo": "catalog:",
+    "typescript": "catalog:",
+    "unbuild": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:",
+    "vue": "catalog:",
+    "vue-tsc": "catalog:",
+    "tailwindcss": "catalog:",
+    "rimraf": "catalog:",
+    "lint-staged": "catalog:",
+    "is-ci": "catalog:",
+    "@xin/tsconfig": "workspace:*",
+    "@xin/eslint-config": "workspace:*",
+    "@xin/prettier-config": "workspace:*",
+    "@xin/stylelint-config": "workspace:*",
+    "@xin/vite-config": "workspace:*",
+    "@xin/turbo-run": "workspace:*",
+    "@xin/tailwind-config": "workspace:*"
+  },
+  "engines": {
+    "node": ">=20.10.0",
+    "pnpm": ">=9.12.0"
+  },
+  "packageManager": "pnpm@9.15.3",
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "eslint": "*"
+      }
+    },
+    "overrides": {
+      "@ast-grep/napi": "catalog:",
+      "@ctrl/tinycolor": "catalog:",
+      "clsx": "catalog:",
+      "esbuild": "0.24.0",
+      "pinia": "catalog:",
+      "vue": "catalog:"
+    },
+    "neverBuiltDependencies": [
+      "canvas",
+      "node-gyp"
+    ]
+  }
+}
