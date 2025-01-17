@@ -1,0 +1,26 @@
+{
+  "name": "@xin/prettier-config",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenxin360/vue-xin-admin.git",
+    "directory": "internal/lint-configs/prettier-config"
+  },
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./index.mjs",
+  "module": "./index.mjs",
+  "exports": {
+    ".": {
+      "default": "./index.mjs"
+    }
+  },
+  "dependencies": {
+    "prettier": "catalog:",
+    "prettier-plugin-tailwindcss": "catalog:"
+  }
+}
