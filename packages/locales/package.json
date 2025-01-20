@@ -1,0 +1,26 @@
+{
+  "name": "@xin/locales",
+  "version": "1.0.0",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenxin360/vue-xin-admin.git",
+    "directory": "packages/locales"
+  },
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./src/index.ts"
+    }
+  },
+  "dependencies": {
+    "vue": "catalog:",
+    "vue-i18n": "catalog:",
+    "@intlify/core-base": "catalog:",
+    "@xin-core/composables": "workspace:*"
+  }
+}
