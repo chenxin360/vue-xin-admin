@@ -1,0 +1,36 @@
+{
+  "name": "@xin/web-ele",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chenxin360/vue-xin-admin.git",
+    "directory": "apps/web-ele"
+  },
+  "author": {
+    "name": "xin",
+    "email": "chenxin_web@163.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm vite build --mode production",
+    "build:analyze": "pnpm vite build --mode analyze",
+    "dev": "pnpm vite --mode development",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit --skipLibCheck"
+  },
+  "imports": {
+    "#/*": "./src/*"
+  },
+  "dependencies": {
+    "@vueuse/core": "catalog:",
+    "dayjs": "catalog:",
+    "element-plus": "catalog:",
+    "pinia": "catalog:",
+    "vue": "catalog:",
+    "vue-router": "catalog:"
+  },
+  "devDependencies": {
+    "unplugin-element-plus": "catalog:"
+  }
+}
